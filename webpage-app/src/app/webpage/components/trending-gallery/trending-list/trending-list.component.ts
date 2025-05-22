@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { TrendingItemComponent } from "../trending-item/trending-item.component";
+import { MyGif } from 'src/app/webpage/interfaces/mygif.interface';
 
 
 
@@ -11,5 +12,5 @@ import { TrendingItemComponent } from "../trending-item/trending-item.component"
 ],
 })
 export class TrendingListComponent {
-  gifs = input.required<string[]>();
+  gifs = input.required<MyGif[]>();
  }
